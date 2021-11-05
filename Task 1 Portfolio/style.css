@@ -1,0 +1,177 @@
+body {
+  background-color: #f3f3f3;
+  font-weight: 300;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.5rem;
+  width: 100%;
+  padding: 0%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: white;
+}
+
+.img {
+  height: 2rem;
+  margin-left: 3rem;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-right: 4rem;
+  /* margin-right: 30rem; */
+}
+
+.nav__item {
+  margin-left: 4rem;
+}
+
+.nav__element {
+  font-family: inherit;
+  font-size: 1rem;
+  color: darkslategray;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.nav__element:hover {
+  opacity: 0.6;
+}
+
+.section--home {
+  display: flex;
+  height: 40rem;
+}
+
+.welcome__note {
+  margin-top: 15rem;
+  margin-left: 10rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 60px;
+  color: seagreen;
+  font-style: italic;
+}
+
+.header__my {
+  margin-left: 4rem;
+}
+
+.image__skills {
+  height: 9rem;
+  margin-top: 8.5rem;
+  margin-left: 5rem;
+  opacity: 0.6;
+}
+
+.image__experience {
+  height: 10rem;
+  margin-top: 12rem;
+  /* margin-left: 15rem; */
+  opacity: 0.5;
+}
+
+.image__learn {
+  margin-top: 12rem;
+  height: 10rem;
+}
+
+/* .section__experience {
+  margin-left: 9rem;
+  padding: 10px;
+  font-size: 50px;
+} */
+
+.section__title {
+  margin-left: 4rem;
+  font-family: sans-serif;
+  color: seagreen;
+  font-size: 32px;
+}
+
+.section--1 {
+  padding: 5rem;
+}
+
+.section--2 {
+  padding: 5rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.grid-item {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 0px;
+  height: 3rem;
+  /* margin-top: 6rem; */
+  margin-bottom: 25rem;
+  justify-content: center;
+}
+
+.image--1 {
+  opacity: 0.9;
+  size: 5rem;
+}
+
+.image--1 :hover {
+  opacity: 0.7;
+}
+
+.grid--text {
+  font-family: sans-serif;
+}
+
+.grid--text h2 {
+  color: darkslategray;
+  font-size: 32px;
+}
+
+.grid--text p {
+  color: darkslategray;
+}
+
+.sectionline {
+  color: gray;
+  opacity: 0.7;
+}
+
+.experience__header {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section__skills h2 {
+  margin-left: 4rem;
+  font-family: sans-serif;
+  color: darkslategray;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  margin-left: 2rem;
+}
+
+.tab--headers {
+  font-size: 110%;
+  font-family: sans-serif;
+  margin-left: 7rem;
+  color: darkslategray;
+}
+
+.tab--headers:hover {
+  opacity: 0.6;
+}
+
+.images--skills:hover {
+  opacity: 0.6;
+}
