@@ -13,32 +13,84 @@
         <img class="img" src="portfolio.jpg" alt="" />
         <ul class="nav__links">
           <li class="nav__item">
-            <a class="nav__element" href="#">Home</a>
+            <a class="nav__element" href="#section--0">Home</a>
           </li>
           <li class="nav__item">
-            <a class="nav__element" href="#section--1">Experience</a>
+            <a class="nav__element" href="#section--1">About Me</a>
           </li>
           <li class="nav__item">
-            <a class="nav__element" href="#section--2">Skills</a>
+            <a class="nav__element" href="#section--2">Experience</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__element" href="#section--3">Skills</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__element" href="#section--4">My Clients</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__element" href="#section--5">Contact</a>
           </li>
         </ul>
       </nav>
     </div>
+
     <!--Home section-->
+    <section class="" id="section--0">
     <div class="section--home">
+      <div class="welcome">
       <h1 class="welcome__note">
         <span class="header__welcome">Welcome</span>
         to <br />
-        <span class="header__my">my</span>
+        <span class="header__my">Ayesha's</span>
         <span class="header__portfolio">Portfolio</span>
       </h1>
-      <img class="image__skills" src="skills.jpg" alt="" />
-      <img class="image__experience" src="experience.jpg" alt="" />
     </div>
-<hr class="sectionline">
+    </div>
+  </section>
 
-    <!--Section 1-->
-    <section class="section--1">
+
+    <!-- Section About me -->
+    <section class="section section__about" id="section--1">
+      <div class="section__about__me">
+        <h1 class="section__title">About Me</h1>
+        <h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        </h2>
+      </div>
+
+      <div class="tab tabs__about">
+        <button class="tablinks" onclick="openCity(event, 'Designation')">Designation</button>
+        <button class="tablinks" onclick="openCity(event, 'Working Experience')">Working Experience</button>
+        <button class="tablinks" onclick="openCity(event, 'Job Experience')">Job Experience</button>
+
+      </div>
+
+      <!-- Tab content -->
+      <!-- These tabs will be hidden and the one clicked will be displayed as active -->
+      <div id="Designation" class="tabcontent">
+        <h3>Designation</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      </div>
+
+      <div id="Working Experience" class="tabcontent">
+        <h3>Working Experience</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      </div>
+
+      <div id="Job Experience" class="tabcontent">
+        <h3>Job Experience</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      </div>
+
+      <div class="btn__resume">
+        <button class="resume" onclick="openCity(event, 'Resume')">My Resume</button>
+      </div>
+    </section>
+
+    <hr class="sectionline">
+
+    <!--Section Experience-->
+    <section class="section" id="section--2">
       <h1 class="section__title">Experience</h1>
       <div class="grid-container">
         <div class="grid-item image--1">
@@ -68,9 +120,9 @@
         </div>
     </section>
 
-    <!--Section 2-->
-    <hr class="sectionline">
-    <section class="section--2">
+    <!--Section 2 Skills-->
+    <hr class="sectionline" id="section--3">
+    <section class="section section--2">
       <div class="section__skills">
           <h1 class="section__title">Skills</h1>
           <h2>
@@ -101,6 +153,77 @@
         </h3>
       </div>
     </div>
+    </section>
+    <hr class="sectionline">
+
+    <!--    Section Clients    -->
+    <section class="section section--3" id="section--4">
+      <div class="section__clients">
+          <h1 class="section__title">My Clients</h1>
+          <h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          </h2>
+      </div>
+
+      <div class="tab__client">
+
+      <div class="client__tabs">
+        <img class="images--clients" src="bill_gates.jpg" alt=""> <br>
+        <h3 class="client--headers">
+          Bill Gates
+        </h3>
+        <p>American businessman</p>
+      </div>
+
+      <div class="client__tabs">
+        <img class="images--clients" src="marry_barra.jpg" alt="">
+        <h3 class="client--headers">
+          Mary Barra
+        </h3>
+        <p>CEO, General Motors</p>
+      </div>
+
+      <div class="client__tabs">
+        <img class="images--clients" src="timcook.jpeg" alt="">
+        <h3 class="client--headers">
+          Tim Cook
+        </h3>
+        <p>CEO, Apple Inc.</p>
+      </div>
+    </div>
+    </section>
+    
+
+    <!-- Section "Contact Me" -->
+    <section class="section--4" id="section--5">
+      
+        <h1 class="contact__title">Contact Me</h1>
+          <div class="grid-container-1">
+            <div class="grid-item-1 address">
+              <h4>Contact</h4>
+              <p>xxxx-xxxxxxxx</p>
+
+              <h4>Address</h4>
+              <p>Lahore, Pakistan</p>
+
+              <h4>Email</h4>
+              <p>xxx@gmail.com</p>
+            </div>
+
+            <div class="grid-item-1 input--form">
+              <form class="contact--form">
+                
+                <input class="form__input" type="text" id="fname" name="fname" value="Name">
+                <br>
+                <input class="form__input" type="text" id="contact" name="lname" value="Contact">
+                <br>                
+                <input class="form__input" type="text" id="email" name="email" value="Email">
+                <br><br>
+                <input class="btn__submit" type="button" value="Submit">
+              </form>
+            </div>
+          </div>
+      
     </section>
   
   </body>

@@ -33,7 +33,7 @@ body {
 
 .nav__element {
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 15px;
   color: darkslategray;
   font-weight: 400;
   text-decoration: none;
@@ -45,21 +45,36 @@ body {
 
 .section--home {
   display: flex;
+  background-image: url("home_image.jpg");
   height: 40rem;
+  margin-left: 0rem;
 }
 
-.welcome__note {
-  margin-top: 15rem;
-  margin-left: 10rem;
+.welcome {
+  margin-top: 12rem;
+  margin-left: 14%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 60px;
   color: seagreen;
   font-style: italic;
 }
 
-.header__my {
-  margin-left: 4rem;
+.welcome__note {
+  /* margin-top: 12rem; */
+  /* margin-left: 28%; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 60px;
+  color: seagreen;
+  font-style: italic;
 }
+
+.header__welcome {
+  margin-left: 5.5rem;
+}
+
+/* .header__my {
+   margin-left: 4rem; 
+}  */
 
 .image__skills {
   height: 9rem;
@@ -93,12 +108,8 @@ body {
   font-size: 32px;
 }
 
-.section--1 {
-  padding: 5rem;
-}
-
-.section--2 {
-  padding: 5rem;
+.section {
+  margin: 5%;
 }
 
 .grid-container {
@@ -148,7 +159,7 @@ body {
   margin-bottom: 1rem;
 }
 
-.section__skills h2 {
+.section h2 {
   margin-left: 4rem;
   font-family: sans-serif;
   color: darkslategray;
@@ -164,7 +175,7 @@ body {
 .tab--headers {
   font-size: 110%;
   font-family: sans-serif;
-  margin-left: 7rem;
+  margin-left: 1rem;
   color: darkslategray;
 }
 
@@ -174,4 +185,223 @@ body {
 
 .images--skills:hover {
   opacity: 0.6;
+}
+
+.section__about {
+  margin: 10%;
+}
+
+.section__about__me {
+  margin-left: 5rem;
+}
+
+.section__about__me h2 {
+  margin-left: 4rem;
+  font-family: sans-serif;
+  color: darkslategray;
+}
+
+.tab {
+  /* margin-left: 22%;
+  margin-right: 18%; */
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  align-content: center;
+}
+
+.tablinks {
+  background-color: #8fbc8f;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: darkslategray;
+  margin: 5px;
+  width: 12rem;
+}
+
+.tab button {
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* These tabs will be hidden and the one clicked will be displayed as active */
+.tabcontent {
+  display: flexbox;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 1%;
+  padding: 4rem;
+  border: 1px solid #ccc;
+  font-family: sans-serif;
+  background-color: #ffff;
+  color: darkslategray;
+}
+
+.btn__resume {
+  display: flex;
+  margin: 4rem;
+  padding: 1rem;
+  justify-content: center;
+  font-family: sans-serif;
+  color: darkslategray;
+}
+
+.btn__resume button {
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.btn__resume button:hover {
+  background-color: #ddd;
+}
+
+.resume {
+  background-color: #fd424b;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 5px;
+  width: 12rem;
+}
+
+.tab__client {
+  display: flex;
+  justify-content: center;
+}
+
+.client__tabs {
+  display: flexbox;
+  justify-content: center;
+  align-content: space-between;
+  margin: 10px;
+}
+
+.images--clients {
+  border-radius: 95px;
+}
+
+.client--headers {
+  display: flex;
+  justify-content: center;
+}
+
+.client__tabs p {
+  display: flex;
+  justify-content: center;
+}
+
+.section--4 {
+  background-image: url("contact_section_background.jpg");
+}
+
+.contact__title {
+  font-family: sans-serif;
+  color: white;
+  padding: 4rem;
+  margin: 0%;
+  font-size: 32px;
+}
+
+.grid-container-1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  height: 20rem;
+  margin: 0%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.grid-item-1 {
+  align-content: space-between;
+  justify-content: center;
+  padding: 10px;
+  margin-left: 20%;
+
+  /* border-style: solid;
+  border-color: white; */
+}
+
+.address {
+  display: inline;
+  height: 80%;
+}
+.address h4 {
+  margin: 0%;
+  font-family: sans-serif;
+  color: #f3f3f3;
+}
+
+.address p {
+  margin: 0%;
+  margin-bottom: 4%;
+  font-family: sans-serif;
+  color: #f3f3f3;
+}
+
+.input--form {
+  width: 36%;
+  height: 80%;
+  margin-left: 45%;
+  opacity: 1;
+}
+
+/* .contact--form {
+  width: 20rem;
+} */
+
+.form__input {
+  display: flex;
+  justify-content: center;
+
+  margin: 0%;
+  width: 250px;
+  height: 30px;
+  color: gray;
+}
+
+.btn__submit {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 100px;
+  margin-left: 30%;
+  border-radius: 30px;
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+
+  background-color: #90ee90;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.btn__submit:hover {
+  background-color: #ddd;
 }
