@@ -10,7 +10,7 @@
   <body>
     <div>
       <nav class="nav">
-        <img class="img" src="portfolio.jpg" alt="" />
+        <img class="img__portfolio" src="portfolio.jpg" alt="" />
         <ul class="nav__links">
           <li class="nav__item">
             <a class="nav__element" href="#section--0">Home</a>
@@ -19,22 +19,25 @@
             <a class="nav__element" href="#section--1">About Me</a>
           </li>
           <li class="nav__item">
-            <a class="nav__element" href="#section--2">Experience</a>
+            <a class="nav__element" href="#section--2">Skills</a>
           </li>
           <li class="nav__item">
-            <a class="nav__element" href="#section--3">Skills</a>
+            <a class="nav__element" href="#section--3">Experience</a>
           </li>
           <li class="nav__item">
-            <a class="nav__element" href="#section--4">My Clients</a>
+            <a class="nav__element" href="#section--4">Services</a>
           </li>
           <li class="nav__item">
-            <a class="nav__element" href="#section--5">Contact</a>
+            <a class="nav__element" href="#section--5">My Clients</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__element" href="#section--6">Contact</a>
           </li>
         </ul>
       </nav>
     </div>
 
-    <!--Home section-->
+    <!--  0. Home section  -->
     <section class="" id="section--0">
     <div class="section--home">
       <div class="welcome">
@@ -46,10 +49,10 @@
       </h1>
     </div>
     </div>
-  </section>
+    </section>
 
 
-    <!-- Section About me -->
+    <!-- 1. Section About me -->
     <section class="section section__about" id="section--1">
       <div class="section__about__me">
         <h1 class="section__title">About Me</h1>
@@ -58,39 +61,126 @@
         </h2>
       </div>
 
-      <div class="tab tabs__about">
+    <div class="grid-container-2">
+      <!-- <div class="tab tabs__about">
         <button class="tablinks" onclick="openCity(event, 'Designation')">Designation</button>
         <button class="tablinks" onclick="openCity(event, 'Working Experience')">Working Experience</button>
         <button class="tablinks" onclick="openCity(event, 'Job Experience')">Job Experience</button>
+      </div> -->
 
+      <div class="profile__picture  grid-item-2">
+        <div class="image__profile">
+        <img src="profile_female.jpg" alt="">
+        </div>
+        <div class="btn__resume">
+        <button class="resume" onclick="openCity(event, 'Resume')">My Resume</button>
+        </div>
       </div>
+      
 
       <!-- Tab content -->
       <!-- These tabs will be hidden and the one clicked will be displayed as active -->
-      <div id="Designation" class="tabcontent">
+     <div class="description grid-item-2">
+      <div class="about__me">
         <h3>Designation</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
       </div>
-
-      <div id="Working Experience" class="tabcontent">
+      <div class="about__me">
         <h3>Working Experience</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
       </div>
-
-      <div id="Job Experience" class="tabcontent">
+      <div class="about__me">
         <h3>Job Experience</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-      </div>
+      </div> 
+     </div>
 
-      <div class="btn__resume">
-        <button class="resume" onclick="openCity(event, 'Resume')">My Resume</button>
-      </div>
+      
+    </div>
     </section>
-
     <hr class="sectionline">
 
-    <!--Section Experience-->
-    <section class="section" id="section--2">
+    <!-- 2. Section Skills -->
+    <section class="section section--2" id="section--2">
+      <div class="section__skills">
+          <h1 class="section__title">Skills</h1>
+          <h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          </h2>
+      </div>
+
+      <div class="grid-container-3">
+
+        <!-- Skills in 1st column -->
+        <div class="grid-item-3  column1">
+          
+
+            <div class="progress__column__1">
+            <p class="percent__p__1 percent__html">HTML  &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160
+               &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160  70% </p>
+
+            <div class="w3-border">
+              <div class="w3-green  green-70"></div>
+            </div>
+            <br>
+          
+            <p class="percent__p__1 percent__css">CSS &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160
+              &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 
+               60% </p>
+            <div class="w3-border">
+             <div class="w3-green  green-60"></div>
+            </div>
+            </div><br>
+          
+           <p class="percent__p__1  percent__js">JavaScript &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160
+            &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160  25% </p>
+           <div class="w3-border">
+             <div class="w3-green  green-25"></div>
+           </div>
+           </div>
+         
+        
+
+        <!-- Skills in 2nd column -->
+        <div class="grid-item-3  column2">
+
+          <div class="progress__column__2">
+            <p class="percent__p__2  percent__communication">Communication Skills &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160
+              &#160 &#160 &#160 &#160 &#160   
+                100% </p>
+             <div class="w3-border-2">
+               <div class="w3-green-2   green-100"></div>
+             </div>
+             </div><br>
+
+             <div class="progress__column__2">
+              <p class="percent__p__2  percent__management">Project Management &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160
+                &#160 &#160 &#160 &#160 &#160 &#160 &#160   
+                  80% </p>
+               <div class="w3-border-2">
+                 <div class="w3-green-2   green-80"></div>
+               </div>
+               </div><br>
+
+               <div class="progress__column__2">
+                <p class="percent__p__2  percent__team">Team Work &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160
+                  &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160
+                    95% </p>
+                 <div class="w3-border-2">
+                   <div class="w3-green-2   green-95"></div>
+                 </div>
+                 </div><br>
+            </div>
+            </div><br>
+        </div>
+      
+      </div>
+
+    </section>
+    <hr class="sectionline">
+
+    <!--  3. Section Experience  -->
+    <section class="section" id="section--3">
       <h1 class="section__title">Experience</h1>
       <div class="grid-container">
         <div class="grid-item image--1">
@@ -119,45 +209,28 @@
           <img src="img11.png" alt="">
         </div>
     </section>
+    <hr class="sectionline">
 
-    <!--Section 2 Skills-->
-    <hr class="sectionline" id="section--3">
-    <section class="section section--2">
+    <!--  4. Section Services  -->
+    <section class="section section--2" id="section--4">
       <div class="section__skills">
-          <h1 class="section__title">Skills</h1>
+          <h1 class="section__title">Services</h1>
           <h2>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           </h2>
       </div>
 
-      <div class="tabs">
-
-      <div class="skill__tabs">
-        <img class="images--skills" src="skills1.png" alt=""> <br>
-        <h3 class="tab--headers">
-          Creativity
-        </h3>
+      <div class="services">
+        <img class="service__card" src="service.jpg" alt=""> 
       </div>
 
-      <div class="skill__tabs">
-        <img class="images--skills" src="skills2.jpg" alt="">
-        <h3 class="tab--headers">
-          Tools
-        </h3>
-      </div>
-
-      <div class="skill__tabs">
-        <img class="images--skills" src="skills3.jpg" alt="">
-        <h3 class="tab--headers">
-          Designing
-        </h3>
-      </div>
-    </div>
+        <p class="we__serve">Lots of services!</p>
+      
     </section>
     <hr class="sectionline">
 
-    <!--    Section Clients    -->
-    <section class="section section--3" id="section--4">
+    <!--  5. Section Clients    -->
+    <section class="section section--3" id="section--5">
       <div class="section__clients">
           <h1 class="section__title">My Clients</h1>
           <h2>
@@ -193,9 +266,8 @@
     </div>
     </section>
     
-
-    <!-- Section "Contact Me" -->
-    <section class="section--4" id="section--5">
+    <!--  6. Section "Contact Me" -->
+    <section class="section--4" id="section--6">
       
         <h1 class="contact__title">Contact Me</h1>
           <div class="grid-container-1">
@@ -225,6 +297,24 @@
           </div>
       
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__icons">
+        <img class="icons" src="facebook.jpg" alt="">
+        <img class="icons" src="instagram.jpg" alt="">
+        <img class="icons" src="twitter.jpg" alt="">
+        <img class="icons" src="linkedin.jpg" alt="">
+      </div>
+      
+        <p>&#169 COPYRIGHTS. ALL RIGHTS RESERVED</p>
+        <p>Designed by Ayesha</p>
+      
+        <button class="btn__scroll" id="mybtn" onclick="topFunction()"> ↑ </button>
+          
+    </footer>
+
+    <script src="script.js"></script>
   
   </body>
 </html>
